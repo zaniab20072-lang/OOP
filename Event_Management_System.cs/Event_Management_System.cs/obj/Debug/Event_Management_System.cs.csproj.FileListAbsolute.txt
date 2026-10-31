@@ -1,0 +1,7 @@
+D:\OOP Lab\Event_Management_System.cs\Event_Management_System.cs\obj\Debug\Event_Management_System.cs.csproj.AssemblyReference.cache
+D:\OOP Lab\Event_Management_System.cs\Event_Management_System.cs\obj\Debug\Event_Management_System.cs.csproj.CoreCompileInputs.cache
+D:\OOP Lab\Event_Management_System.cs\Event_Management_System.cs\bin\Debug\Event_Management_System.cs.exe.config
+D:\OOP Lab\Event_Management_System.cs\Event_Management_System.cs\bin\Debug\Event_Management_System.cs.exe
+D:\OOP Lab\Event_Management_System.cs\Event_Management_System.cs\bin\Debug\Event_Management_System.cs.pdb
+D:\OOP Lab\Event_Management_System.cs\Event_Management_System.cs\obj\Debug\Event_Management_System.cs.exe
+D:\OOP Lab\Event_Management_System.cs\Event_Management_System.cs\obj\Debug\Event_Management_System.cs.pdb

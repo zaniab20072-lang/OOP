@@ -1,0 +1,3 @@
+Product Name: pen,Description: for writing,Purchase Price: 40,Sale Price: 30,Discount: 10
+Product Name: laptop,Description: for use,Purchase Price: 70000,Sale Price: 65000,Discount: 5000
+Product Name: bubble,Description: chewing,Purchase Price: 10,Sale Price: 5,Discount: 5

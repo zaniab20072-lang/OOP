@@ -1,0 +1,7 @@
+E101,Hamza Rehan,Music Concert,80000,Sufi and pop singer 
+A102,Zara Mirza,Comedy Show,30000,Stand-up comedian  
+E103,Chef Imran,Food Festival,60000,Celebrity chef 
+A104,Mehwish Anwar,Art Exhibition,40000,Contemporary painter 
+E105,Sana Tariq,Fashion Show,70000,Fashion designer and stylist
+A108,Ustad Rashid,Cultural Night,55000,Classical music performer
+A109,Dr. Ayesha,Business Party,100000,Keynote speaker 

@@ -1,0 +1,7 @@
+D:\OOP Lab\Shop Management System\Shop Management System\bin\Debug\Shop Management System.exe.config
+D:\OOP Lab\Shop Management System\Shop Management System\bin\Debug\Shop Management System.exe
+D:\OOP Lab\Shop Management System\Shop Management System\bin\Debug\Shop Management System.pdb
+D:\OOP Lab\Shop Management System\Shop Management System\obj\Debug\Shop Management System.csproj.AssemblyReference.cache
+D:\OOP Lab\Shop Management System\Shop Management System\obj\Debug\Shop Management System.csproj.CoreCompileInputs.cache
+D:\OOP Lab\Shop Management System\Shop Management System\obj\Debug\Shop Management System.exe
+D:\OOP Lab\Shop Management System\Shop Management System\obj\Debug\Shop Management System.pdb
