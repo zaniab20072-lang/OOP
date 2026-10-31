@@ -27,14 +27,14 @@ namespace Event_Management_System.cs.Booking_Customer
             private void PrintMenu()
             {
                Console.WriteLine();
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine("****************************************************************** ");
+               Console.ForegroundColor = ConsoleColor.Cyan;
+               Console.WriteLine("****************************************************************** ");
                Console.WriteLine("                       Customer Menu                                ");
                Console.WriteLine("****************************************************************** ");
-            Console.ForegroundColor = ConsoleColor.White;
+               Console.ForegroundColor = ConsoleColor.White;
                Console.WriteLine();
                Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine(" 1- View Events");
+               Console.WriteLine(" 1- View Events");
                Console.WriteLine(" 2- Book Tickets");
                Console.WriteLine(" 3- Generate Ticket");
                Console.WriteLine(" 4- Search Event");
@@ -42,9 +42,9 @@ namespace Event_Management_System.cs.Booking_Customer
                Console.WriteLine(" 6- Give Your Feedback");
                Console.WriteLine(" 7- View Event Facilities");
                Console.WriteLine(" 8- View Artist ");
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine(" 9- Logout");
-            Console.ForegroundColor = ConsoleColor.White;
+               Console.ForegroundColor = ConsoleColor.Red;
+               Console.WriteLine(" 9- Logout");
+               Console.ForegroundColor = ConsoleColor.White;
         }
 
 

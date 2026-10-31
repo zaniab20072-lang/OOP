@@ -11,11 +11,16 @@ namespace Event_Management_System.cs
     internal class Program
     {
         static void Main(string[] args)
+
         {
-            while(true)
+            // Driver Code For Event Management System
+
+
+            while (true)
             {
                 Console.Clear();
                 
+                // Main Menu Of Driver Code
                 Console.WriteLine();
                 Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine("********************************************************************************");
@@ -37,6 +42,8 @@ namespace Event_Management_System.cs
                 Console.Write(" Please select an option:");
                 string choice = Console.ReadLine();
                 Console.ForegroundColor = ConsoleColor.White;
+
+                // Admin or Event Organizer Login
 
                 if (choice == "1")
                 {
@@ -62,11 +69,17 @@ namespace Event_Management_System.cs
                         Console.ReadKey();
                     }
                 }
+
+                // Customer Login
+
                 else if (choice == "2")
                 {
                     CustomerUI customerUI = new CustomerUI();
                     customerUI.ShowCustomerMenu();
                 }
+
+                // Exit Option
+
                 else if (choice == "3")
                 {
                     Console.ForegroundColor = ConsoleColor.DarkBlue;
@@ -74,6 +87,9 @@ namespace Event_Management_System.cs
                     Console.ForegroundColor = ConsoleColor.White;
                     break;
                 }
+
+                // Invalid Choice Handling
+
                 else
                 {
                     Console.WriteLine();

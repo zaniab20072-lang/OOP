@@ -189,6 +189,7 @@ namespace Event_Management_System.cs.Artist
             Console.ForegroundColor = ConsoleColor.White;
         }
 
+        // Function To Generate Report Of Artists
         private void ReportOfArtistsUI()
         {
             List<ArtistModel> artists = _artistService.GetAllArtists();
