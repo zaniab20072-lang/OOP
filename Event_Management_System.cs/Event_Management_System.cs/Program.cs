@@ -15,7 +15,6 @@ namespace Event_Management_System.cs
         {
             // Driver Code For Event Management System
 
-
             while (true)
             {
                 Console.Clear();
