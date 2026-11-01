@@ -20,8 +20,8 @@ namespace Event_Management_System.cs.Booking_Customer
             public CustomerUI()
             {
                 _eventService = new EventService();
-                _bookingService = new BookingService();
-            _artistService = new ArtistService();
+                _bookingService = new BookingService();  
+           _artistService = new ArtistService();    
             }
         // function To wrtie the menu 
             private void PrintMenu()
@@ -112,7 +112,7 @@ namespace Event_Management_System.cs.Booking_Customer
                 Console.Write("  Enter no of seats you want to reserve: ");
                 int seats = int.Parse(Console.ReadLine());
 
-                Console.ForegroundColor = ConsoleColor.DarkGreen;
+                Console.ForegroundColor = ConsoleColor.Green;
                 string result = _bookingService.BookTickets(customerName, eventName, seats);
                 Console.WriteLine(result);
                 Console.ForegroundColor = ConsoleColor.White;
@@ -175,7 +175,7 @@ namespace Event_Management_System.cs.Booking_Customer
                 Console.Write("  Enter seats to cancel: ");
                 int cancelSeats = int.Parse(Console.ReadLine());
                  
-                Console.ForegroundColor = ConsoleColor.DarkGreen;
+                Console.ForegroundColor = ConsoleColor.Green;
             string result = _bookingService.CancelSeats(customerName, eventName, cancelSeats);
                 Console.WriteLine(result);
             Console.ForegroundColor = ConsoleColor.White;
@@ -189,7 +189,7 @@ namespace Event_Management_System.cs.Booking_Customer
 
                 _bookingService.AddFeedBack(feedback);
 
-                Console.ForegroundColor = ConsoleColor.DarkGreen;
+                Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("\n  Thanks for giving your feedback ! ");
             Console.ForegroundColor = ConsoleColor.White;
         }

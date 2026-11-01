@@ -80,7 +80,7 @@ namespace Event_Management_System.cs
 
                 else if (choice == "3")
                 {
-                    Console.ForegroundColor = ConsoleColor.DarkBlue;
+                    Console.ForegroundColor = ConsoleColor.Blue;
                     Console.WriteLine(" Exiting the program. Goodbye!");
                     Console.ForegroundColor = ConsoleColor.White;
                     break;
@@ -90,7 +90,7 @@ namespace Event_Management_System.cs
 
                 else
                 {
-                    Console.WriteLine();
+                    Console.WriteLine(); 
                     Console.ForegroundColor = ConsoleColor.Gray;
                     Console.WriteLine(" Invalid choice. Please try again.");
                     Console.WriteLine(" Press Any Key to continue...");

@@ -131,7 +131,7 @@ namespace Event_Management_System.cs.Artist
             ArtistModel newArtist = new ArtistModel(artistID, artistName, eventName, payment, description);
             _artistService.AddArtist(newArtist);
 
-            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("\n  Artist Added Successfully !");
             Console.ForegroundColor = ConsoleColor.White;
         }
@@ -145,7 +145,7 @@ namespace Event_Management_System.cs.Artist
             bool found = _artistService.DeleteArtist(artistName);
             if (found)
             {
-                Console.ForegroundColor = ConsoleColor.DarkGreen;
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("\n  Artist Deleted Successfully !");
                 Console.ForegroundColor = ConsoleColor.White;
             }
@@ -184,7 +184,7 @@ namespace Event_Management_System.cs.Artist
             ArtistModel updatedArtist = new ArtistModel(artistID, artistName, eventName, payment, description);
             _artistService.UpdateArtist(name, updatedArtist);
 
-            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("\n  Artist Updated Successfully !");
             Console.ForegroundColor = ConsoleColor.White;
         }

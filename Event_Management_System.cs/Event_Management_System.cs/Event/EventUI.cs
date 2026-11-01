@@ -157,7 +157,7 @@ namespace Event_Management_System.cs.Event
             EventModel newEvent = new EventModel(eventID, eventName, eventDate, totalSeats, ticketPrice, remainingSeats, freeThings);
             _eventService.AddEvent(newEvent);
 
-            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("\n  Event added successfully!");
             Console.ForegroundColor = ConsoleColor.White;
         }
@@ -173,7 +173,7 @@ namespace Event_Management_System.cs.Event
             bool found = _eventService.DeleteEvent(name);
              if(found)
             {
-                Console.ForegroundColor = ConsoleColor.DarkGreen;
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("\n   Record Deleted Successfully ");
                 Console.ForegroundColor = ConsoleColor.White;
             }
@@ -218,7 +218,7 @@ namespace Event_Management_System.cs.Event
             EventModel updateEvent = new EventModel(eventID, eventName, eventDate, totalSeats, ticketPrice, remainingSeats, freeThings);
             _eventService.UpdateEvent(name, updateEvent);      
 
-            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("\n  Event updated successfully!");
             Console.ForegroundColor = ConsoleColor.White;
         }
