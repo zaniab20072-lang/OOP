@@ -1,10 +1,10 @@
-EA103,Comedy Show,13-Nov-2026,150,1500,100,Free Snacks + Soft Drink + Photo Booth
+EA103,Comedy Show,13-Nov-2026,150,1500,80,Free Snacks + Soft Drink + Photo Booth
 B104,Food Festival,14-Nov-2026,300,2000,235,Free Tasting Coupon + Water Bottle + Gift Card
 SD105,Art Exhibition,15-Nov-2026,60,35000,35,Art Brochure + Free Coffee + Souvenir
 ZC203,Fashion Show,20-nov-2026,75,3000,19,Welcome Drink + Free Makeup Sample + Parking
 BN190,Movie Premiere,22-Nov-2026,30,8000,17,Popcorn + Soft Drink + Poster
 GV556,Cultural Night,23-Nov-2026,67,2500,56,Dinner + Tea + Reserved Seating
 EH108,Business Party,29-Nov-2026,50,4000,30,Conference + Lunch + Free WiFi
-D901,My Picture,15-Nov-2026,34,5000,12,Welcome Drinks + Pictures + Parking
+D901,My Picture,15-Nov-2026,34,1500,12,Welcome Drinks + Pictures + Parking
 H304,Movie Night,30-Nov-2026,45,6000,23,Dinner + welcome Drinks + Reserved seats
-J101,Music Concert,11-Nov-2026,200,1500,140,Free Parking + Welcome Drink + VIP Badge
+J101,Music Concert,11-Nov-2026,200,5000,138,Free Parking + Welcome Drink + VIP Badge

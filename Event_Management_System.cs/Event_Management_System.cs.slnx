@@ -1,6 +1,7 @@
 <Solution>
   <Folder Name="/Solution Items/">
     <File Path="Event_Management_System.cs/bin/Debug/artists.txt" />
+    <File Path="Event_Management_System.cs/bin/Debug/bookings.txt" />
     <File Path="Event_Management_System.cs/bin/Debug/events.txt" />
     <File Path="Event_Management_System.cs/bin/Debug/feedbacks.txt" />
   </Folder>

@@ -222,6 +222,7 @@ namespace Event_Management_System.cs.Booking_Customer
                 Console.WriteLine("  " + artists[i].ArtistName + "\t " + artists[i].ArtistEvent + "\t " + artists[i].Description);
             }
         }
+
     }
 }
 

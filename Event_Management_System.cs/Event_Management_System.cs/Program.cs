@@ -11,7 +11,6 @@ namespace Event_Management_System.cs
     internal class Program
     {
         static void Main(string[] args)
-
         {
             // Driver Code For Event Management System
 
