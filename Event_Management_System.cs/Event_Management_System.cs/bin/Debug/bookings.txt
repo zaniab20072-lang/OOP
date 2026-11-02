@@ -1,3 +1,5 @@
 Zainab Adnan,Music Concert,10,15000
 Adnan Younas,Comedy Show,20,30000
-Zainab Adnan,Business Party,3,12000
+Zainab Adnan,Business Party,2,8000
+Momina Adnan,Fashion Show,4,12000
+Hamza Adnan,Food Festival,10,20000

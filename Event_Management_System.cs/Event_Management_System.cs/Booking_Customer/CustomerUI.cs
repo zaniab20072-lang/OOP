@@ -42,7 +42,9 @@ namespace Event_Management_System.cs.Booking_Customer
                Console.WriteLine(" 6- Give Your Feedback");
                Console.WriteLine(" 7- View Event Facilities");
                Console.WriteLine(" 8- View Artist ");
-               Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("10- For User");
+           
+            Console.ForegroundColor = ConsoleColor.Red;
                Console.WriteLine(" 9- Logout");
                Console.ForegroundColor = ConsoleColor.White;
         }
@@ -71,8 +73,10 @@ namespace Event_Management_System.cs.Booking_Customer
                     else if (option == "6") { GiveFeedbackUI(); }
                     else if (option == "7") { ViewFacilitiesUI(); }
                     else if (option == "8") { ViewArtistUI();  }
+                else if(option == "10") { UserUI(); }
                 
-                    else { Console.ForegroundColor = ConsoleColor.Gray; Console.WriteLine("\n  Invalid option!"); Console.ForegroundColor = ConsoleColor.White; }
+
+                else { Console.ForegroundColor = ConsoleColor.Gray; Console.WriteLine("\n  Invalid option!"); Console.ForegroundColor = ConsoleColor.White; }
 
                 Console.WriteLine();
                 Console.ForegroundColor = ConsoleColor.Gray;
@@ -222,6 +226,86 @@ namespace Event_Management_System.cs.Booking_Customer
                 Console.WriteLine("  " + artists[i].ArtistName + "\t " + artists[i].ArtistEvent + "\t " + artists[i].Description);
             }
         }
+
+        private void UserUI()
+        {
+           
+            Console.WriteLine(" 1- Numeric Range");
+            Console.WriteLine(" 2- Exact Match");
+            Console.WriteLine(" 3- Partail Match");
+            Console.WriteLine(" 4- Numeric Range And Exact Match ");
+            Console.WriteLine(" 5- Numeric Range And Partail Match ");
+            Console.WriteLine(" 6- Partail Match And Exact Match ");
+            Console.WriteLine(" 7- Numeric Range And Exact Match And Partail Match ");
+
+            Console.WriteLine("\n Chose Which thing you Want");
+            string option = Console.ReadLine();
+            if (option == "1")
+            {
+                NumericalRangeUI();
+            }
+            else if (option == "2")
+            {
+                ExactMatchUI();
+            }
+             else if (option == "3")
+            {
+                PartailMatchUI();
+            }
+            else if (option == "4") { NumericalRangeUI(); ExactMatchUI(); }
+            else if (option == "5") { NumericalRangeUI(); PartailMatchUI(); }
+            else if (option == "6") { PartailMatchUI(); ExactMatchUI(); }
+            else if (option == "7") { NumericalRangeUI(); ExactMatchUI(); PartailMatchUI(); }
+
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Gray;
+            Console.WriteLine("  Press any key to continue...");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.ReadKey();
+        }
+
+        private void NumericalRangeUI()
+        {
+            List<EventModel> events = _eventService.GetAllEvents();
+            Console.WriteLine("Enter RangeOne: ");
+            float range1 = float.Parse(Console.ReadLine());
+            Console.WriteLine("Enter RangeTwo: ");
+            float range2 = float.Parse(Console.ReadLine());
+
+            Console.WriteLine("\n Ranges ");
+            List<string> result = _bookingService.NumericRange(range1, range2);
+            for (int i = 0; i < events.Count; i++)
+            {
+                Console.WriteLine("  " + result[i]);
+            }
+        }
+        private void ExactMatchUI()
+        {
+            List<EventModel> events = _eventService.GetAllEvents();
+            Console.WriteLine("Enter  exact Match event : ");
+            string ev = Console.ReadLine();
+
+            List<string> result2 = _bookingService.ExactMatch(ev);
+            for (int i = 0; i < events.Count; i++)
+            {
+                Console.WriteLine(" " + result2[i]);
+            }
+        }
+        private void PartailMatchUI()
+        {
+            List<EventModel> events = _eventService.GetAllEvents();
+
+            Console.WriteLine("Enter  Partail Match event : ");
+            string ev = Console.ReadLine();
+
+            List<string> result3 = _bookingService.PartailMatch(ev);
+            for (int i = 0; i < events.Count; i++)
+            {
+                Console.WriteLine(" " + result3[i]);
+            }
+        }
+
+
 
     }
 }

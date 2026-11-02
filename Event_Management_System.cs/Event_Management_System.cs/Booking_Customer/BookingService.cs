@@ -107,9 +107,62 @@ namespace Event_Management_System.cs.Booking_Customer
 
         // Function To Get or see All the Feedbacks
 
-        public List<String> GetAllFeedBack()
+       
+
+        public List<string> NumericRange(float range1, float range2)
         {
-            return _repository.LoaadfeedBacks();
+            List<EventModel> events = _eventService.GetAllEvents();
+            List<string> range = new List<string>();
+            for (int i = 0; i < events.Count; i++)
+            {
+                if (events[i].TicketPrice == range1 || events[i].TicketPrice == range2)
+                {
+                    range.Add("Event : " + events[i].EventName + " Price : " + events[i].TicketPrice);
+                }
+                if (events[i].TicketPrice > range1 && events[i].TicketPrice < range2)
+                {
+                    range.Add("Event : " + events[i].EventName + " Price : " + events[i].TicketPrice);
+                }
+            }
+            return range;
+
+        }
+        public List<string> ExactMatch(string letters)
+        {
+            List<EventModel> events = _eventService.GetAllEvents();
+            List<string> match = new List<string>();
+            string l1 = letters.ToUpper();
+            string l2 = letters.ToLower();
+
+            for(int i =0; i<events.Count(); i++)
+            {
+                
+                if(events[i].EventName == l1 || events[i].EventName == l2)
+                {
+
+                    match.Add("Events are : " + events[i].EventName);
+                }
+            }
+            return match;
+
+        }
+
+        public List<string> PartailMatch(string letters)
+        {
+            List<EventModel> events = _eventService.GetAllEvents();
+            List<string> match = new List<string>();
+            
+
+            for (int i = 0; i < events.Count(); i++)
+            {
+                if (events[i].EventName == letters)
+                {
+
+                    match.Add("Events are : " + events[i].EventName);
+                }
+            }
+            return match;
+
         }
     }
 }

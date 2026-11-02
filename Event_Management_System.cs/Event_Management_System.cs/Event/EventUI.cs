@@ -286,11 +286,8 @@ namespace Event_Management_System.cs.Event
             Console.WriteLine("****************************************************************** ");
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine();
-            List<string> feedbackList = _bookingService.GetAllFeedBack();
-            for (int i = 0; i < feedbackList.Count; i++)
-            {
-                Console.WriteLine(" * " + feedbackList[i]);
-            }
+           
+            
         }
 
     }
